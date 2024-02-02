@@ -1,0 +1,21 @@
+{
+  "contact": {
+    "company": "VIET NAM INDUSTRY RESEARCH AND CONSULTANCY JOINT STOCK COMPANY",
+    "hotline": "Hotline",
+    "data": {
+      "item_1": "Certificate of business registration: No.0106972372",
+      "item_2": "By Hanoi Business Registration Office on August 31, 2015",
+      "item_3": "Follow VIRAC:"
+    },
+    "location": {
+      "item_1": {
+        "headquater": "HEADQUATER",
+        "text": "5th floor Anh Minh Building, 36 Hoang Cau Str., Dong Da Dis., Ha Noi"
+      },
+      "item_2": {
+        "representative": "REPRESENTATIVE ",
+        "text": "4th Floor, Tuan Minh Building, 21 Huynh Tinh Cua, Vo Thi Sau Ward, District 3, Ho Chi Minh City"
+      }
+    }
+  }
+}

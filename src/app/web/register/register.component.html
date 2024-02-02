@@ -1,0 +1,199 @@
+<div class="login register">
+  <div class="logo">
+    <img
+      src="https://web-develop.virace.vn/static/media/logo.7b93e016.svg"
+      alt=""
+    />
+  </div>
+  <div>
+    <form action="" [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+      <h1>{{ "register.name" | translate }}</h1>
+      <div class="form-name">
+        <div>
+          <div class="form-control">
+            <div class="icon">
+              <svg
+                width="15"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              placeholder="{{ 'register.form.lastName' | translate }}*"
+              name="lastName"
+              formControlName="lastName"
+            />
+          </div>
+          <div *ngIf="submitted && f.email.errors">
+            <div class="server-error" *ngIf="f.email.errors.required">
+              {{ "error_code.form.require" | translate }}
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="form-control">
+            <div class="icon">
+              <svg
+                width="15"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              placeholder="{{ 'register.form.firstName' | translate }}*"
+              name="firstName"
+              formControlName="firstName"
+            />
+          </div>
+          <div *ngIf="submitted && f.firstName.errors">
+            <div class="server-error" *ngIf="f.firstName.errors.required">
+              {{ "error_code.form.require" | translate }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="form-control">
+          <div class="icon">
+            <svg
+              width="15"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"
+            >
+              <path
+                d="M48 0C21.5 0 0 21.5 0 48V464c0 26.5 21.5 48 48 48h96V432c0-26.5 21.5-48 48-48s48 21.5 48 48v80h96c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H48zM64 240c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V240zm112-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V240c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V240zM80 96h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V112zM272 96h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16z"
+              />
+            </svg>
+          </div>
+          <input
+            type="text"
+            placeholder="{{ 'register.form.company' | translate }}"
+            name="company"
+            formControlName="company"
+          />
+        </div>
+      </div>
+      <div>
+        <div class="form-control">
+          <div class="icon">
+            <svg
+              width="15"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"
+            >
+              <path
+                d="M16 64C16 28.7 44.7 0 80 0H304c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V64zM144 448c0 8.8 7.2 16 16 16h64c8.8 0 16-7.2 16-16s-7.2-16-16-16H160c-8.8 0-16 7.2-16 16zM304 64H80V384H304V64z"
+              />
+            </svg>
+          </div>
+          <input
+            type="text"
+            placeholder="{{ 'register.form.phoneNumber' | translate }}"
+            name="phoneNumber"
+            formControlName="phoneNumber"
+          />
+        </div>
+        <div *ngIf="submitted && f.phoneNumber.errors">
+          <div class="server-error" *ngIf="f.phoneNumber.errors.required">
+            {{ "error_code.form.require" | translate }}
+          </div>
+          <div class="server-error" *ngIf="f.phoneNumber.errors.pattern">
+            {{ "error_code.form.phone-pattern" | translate }}
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="form-control">
+          <div class="icon">
+            <svg
+              width="15"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+              />
+            </svg>
+          </div>
+          <input
+            type="text"
+            placeholder="{{ 'register.form.email' | translate }}"
+            name="email"
+            formControlName="email"
+          />
+        </div>
+        <div *ngIf="submitted && f.email.errors">
+          <div class="server-error" *ngIf="f.email.errors.required">
+            {{ "error_code.form.require" | translate }}
+          </div>
+          <div class="server-error" *ngIf="f.email.errors.pattern">
+            {{ "error_code.form.email-pattern" | translate }}
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="form-control">
+          <div class="icon">
+            <svg
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512"
+            >
+              <path
+                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0l57.4-43c23.9-59.8 79.7-103.3 146.3-109.8l13.9-10.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176V384c0 35.3 28.7 64 64 64H360.2C335.1 417.6 320 378.5 320 336c0-5.6 .3-11.1 .8-16.6l-26.4 19.8zM640 336a144 144 0 1 0 -288 0 144 144 0 1 0 288 0zm-76.7-43.3c6.2 6.2 6.2 16.4 0 22.6l-72 72c-6.2 6.2-16.4 6.2-22.6 0l-40-40c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L480 353.4l60.7-60.7c6.2-6.2 16.4-6.2 22.6 0z"
+              />
+            </svg>
+          </div>
+          <input
+            type="text"
+            placeholder="{{ 'register.form.presenter' | translate }}"
+            name="presenter"
+            formControlName="presenter"
+          />
+        </div>
+      </div>
+
+      <div class="form-submit login-submit">
+        <button
+          loader_color="white"
+          class="common-button w-100 btn btn-secondary"
+        >
+          <span>{{ "register.name" | translate }} </span>
+        </button>
+      </div>
+      <div class="login-or-register">
+        <span>{{ "register.form.already" | translate }}?</span>
+        <span class="ml-2 action-link">
+          <a routerLink="/login"
+            ><span>{{ "login.name" | translate }}</span></a
+          >
+        </span>
+      </div>
+    </form>
+  </div>
+
+  <div class="copyright">
+    <p><a href="#">COPYRIGHT © 2024 VIRAC</a></p>
+    <p class="">
+      <a href="#"><span>{{ "confidentiality" | translate }}</span></a> |
+      <a href="#"><span>{{ "disclaimer" | translate }}</span></a>
+    </p>
+    <p class="">
+      <span class="img-noti"
+        ><img
+          src="https://web-develop.virace.vn/static/media/logoSaleNoti.83fab77c.png"
+          alt=""
+      /></span>
+    </p>
+  </div>
+</div>

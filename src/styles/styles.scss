@@ -1,0 +1,222 @@
+@import "./ultilities/functions.scss";
+@import "./ultilities/variables.scss";
+@import "./app/common.scss";
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 14px;
+}
+.login {
+  padding-top: 115px;
+  padding-bottom: 20px;
+  text-align: center;
+
+  .logo {
+    margin-bottom: 2.5rem;
+  }
+
+  form {
+    margin: 0 auto;
+    background-color: rgba(11, 19, 43, 0.5);
+    padding: 3.125rem;
+    max-width: 500px;
+    font-size: 100%;
+    font-family: "Roboto";
+
+    h1 {
+      color: #3bdbfd;
+      margin-bottom: 2.5rem;
+      font-size: 1.875rem;
+      font-weight: 500;
+      letter-spacing: 0.025rem;
+      text-transform: uppercase;
+    }
+
+    .form-control {
+      width: 100%;
+      position: relative;
+
+      .icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: rgba(174, 193, 228, 0.6);
+
+        svg {
+          fill: rgba(174, 193, 228, 0.6);
+        }
+      }
+
+      >input {
+        border: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        background: 0 0;
+        padding: 0.9375rem 0 0.9375rem 2rem;
+        width: 100%;
+        color: #fff;
+        outline: none;
+      }
+    }
+
+    .form-password {
+      margin-top: 2.5rem;
+      position: relative;
+
+      .eye {
+        position: absolute;
+        top: 17px;
+        right: 5px;
+        z-index: 2;
+        cursor: pointer;
+
+        svg path {
+          fill: #ffffff;
+
+        }
+      }
+
+      .hide-password svg path {
+        fill: #6D7278;
+      }
+    }
+
+    .login-bottom {
+      margin-top: 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-left {
+        display: flex;
+
+        input {
+          clip: rect(0, 0, 0, 0);
+          position: absolute;
+          visibility: hidden;
+          opacity: 0;
+          width: 1px;
+          height: 1px;
+        }
+
+        .icon {
+          margin-right: 10px;
+          cursor: pointer;
+
+          svg {
+            width: 20px;
+            height: 20px;
+            fill: rgba(174, 193, 228, 0.6);
+            ;
+          }
+
+          .true {
+            svg {
+              fill: #3bdbfd !important;
+            }
+          }
+        }
+
+        .label {
+          font-size: 14px;
+          color: rgba(174, 193, 228, 0.6);
+        }
+      }
+
+      &-right {
+        a {
+          color: #4ebdec;
+          font-size: 14px;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .form-submit {
+      margin-top: 2.5rem;
+
+      .common-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease-in-out !important;
+        border: 0;
+        background-image: linear-gradient(270deg, #47b5e8, #2b74ce, #47b5e8) !important;
+        background-size: 200% 100% !important;
+        width: 100%;
+        min-width: 115px;
+        height: 44px !important;
+        color: #fff !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        border-radius: 5px !important;
+        font-size: 14px;
+      }
+    }
+
+    .login-or-register {
+      margin-top: 1rem !important;
+      display: flex;
+      justify-content: flex-end;
+
+      .action-link {
+        color: #4ebdec !important;
+        margin-left: 5px;
+
+        a {
+          text-decoration: none;
+          color: #4ebdec;
+        }
+      }
+    }
+    .server-error{
+      margin-top: 8px;
+      color: red;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.25;
+      text-align: left;
+    }
+
+  }
+
+  .copyright {
+    margin-top: 1.25rem;
+    color: #5d677a;
+    font-size: 12px;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+    line-height: 1.5;
+
+    a {
+      text-decoration: none;
+      color: #5d677a;
+
+    }
+
+    .img-noti {
+      margin-top: 1.25rem;
+      display: inline-block;
+      width: 150px;
+      height: 60px;
+      cursor: pointer;
+
+      img {
+        box-sizing: border-box;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "contact": {
+    "company": "CÔNG TY CỔ PHẦN NGHIÊN CỨU NGÀNH VÀ TƯ VẤN VIỆT NAM",
+    "hotline": "Hotline",
+    "data": {
+      "item_1": "Giấy chứng nhận đăng ký kinh doanh số: 0106972372",
+      "item_2": "Do Sở kế hoạch và đầu tư TP.Hà Nội cấp ngày 31/08/2015",
+      "item_3": "Theo dõi VIRAC:"
+    },
+    "location": {
+      "item_1": {
+        "headquater": "TRỤ SỞ CHÍNH",
+        "text": "Tầng 5 tòa nhà Anh Minh, 36 Hoàng Cầu, Đống Đa, Hà Nội"
+      },
+      "item_2": {
+        "representative": "VĂN PHÒNG ĐẠI DIỆN TẠI HỒ CHÍ MINH ",
+        "text": "Lầu 4, tòa nhà Tuấn Minh, 21 Huỳnh Tịnh Của, P. Võ Thị Sáu, Quận 3 Thành phố Hồ Chí Minh"
+      }
+    }
+  }
+}

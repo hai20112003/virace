@@ -1,0 +1,49 @@
+{
+  "languageList": {
+    "Vietnamese": "VI",
+    "English": "EN"
+  },
+  "address": "Địa chỉ: Tầng 5, Tòa nhà Anh Minh, 36 Hoàng Cầu, Phường Ô Chợ Dừa, Đống Đa, Hà Nội, Việt Nam",
+  "login": {
+    "name": "Đăng nhập",
+    "form":{
+      "email": "Email",
+      "pass": "Mật khẩu",
+      "remember": "Nhớ đăng nhập",
+      "no_account": "Không có tài khoản"
+    }
+  },
+  "register": {
+    "name": "Đăng ký",
+    "form":{
+      "lastName": "Họ",
+      "firstName": "Tên",
+      "company": "Công ty/ Nơi công tác",
+      "phoneNumber": "Số điện thoại",
+      "email": "Email",
+      "presenter": "Email người giới thiệu",
+      "already": "Đã có tài khoản"
+    }
+  },
+  "forgot_password": {
+    "name": "Quên mật khẩu",
+    "content": "Vui lòng nhập email đã đăng ký để hệ thống xác thực và cấp mật khẩu mới",
+    "form":{
+      "email": "Email",
+      "btn": "Gửi yêu cầu"
+    }
+  },
+  "confidentiality": "Bảo mật Thông tin và Dữ liệu",
+  "disclaimer": "Điều khoản miễn trừ",
+  "change_password": {
+    "name": "Đổi mật khẩu",
+    "form":{
+      "pass": "Mật khẩu",
+      "confirm_pass": "Nhập lại mật khẩu"
+    }
+  },
+  "modal": {
+    "content": " Bạn vui lòng điền vào biểu mẫu dưới đây và chúng tôi sẽ liên hệ lại với bạn ngay khi có thể. ",
+    "completed": "Hoàn tất"
+  }
+}

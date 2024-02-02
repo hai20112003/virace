@@ -1,0 +1,16 @@
+
+.register{
+  .form-name{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    >div{
+      >div{
+        width: 100%;
+      }
+    }
+  }
+  .form-control{
+    margin-top: 2.5rem;
+  }
+}

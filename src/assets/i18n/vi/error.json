@@ -1,0 +1,10 @@
+{
+  "error_code": {
+    "form": {
+      "require": "Hãy điền vào ô này",
+      "email-pattern": "Email không đúng định dạng",
+      "phone-pattern": "Số điện thoại không đúng định dạng",
+      "password-mismatch": "Mật khẩu không đúng."
+    }
+  }
+}

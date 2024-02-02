@@ -1,0 +1,13 @@
+{
+  "menu": {
+    "home": {
+      "name": "Trang chủ"
+    },
+    "login": {
+      "name": "Đăng nhập/Đăng ký"
+    },
+    "contact": {
+      "name": "Liên hệ"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "menu": {
+    "home": {
+      "name": "HOME"
+    },
+    "login": {
+      "name": "Login/Register"
+    },
+    "contact": {
+      "name": "Contact"
+    }
+  }
+}

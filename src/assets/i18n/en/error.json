@@ -1,0 +1,10 @@
+{
+  "error_code": {
+    "form": {
+      "require": "Please fill in this box",
+      "email-pattern": "Invalid email format",
+      "phone-pattern": "Invalid phone number",
+      "password-mismatch": "Password is incorrect."
+    }
+  }
+}

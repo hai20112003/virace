@@ -1,0 +1,50 @@
+{
+  "languageList": {
+    "Vietnamese": "VI",
+    "English": "EN"
+  },
+  "address": "Address: 5th Floor, Anh Minh Building, 36 Hoang Cau, O Cho Dua ward, Dong Da district, Hanoi",
+  "login": {
+    "name": "Login",
+    "form":{
+      "email": "Email",
+      "pass": "Password",
+      "remember": "Remember",
+      "no_account": "No account",
+      "already": "Already have an account"
+    }
+  },
+  "register": {
+    "name": "Register",
+    "form":{
+      "lastName": "Last name",
+      "firstName": "First name",
+      "company": "Company / Place of work",
+      "phoneNumber": "Enter phone number",
+      "email": "Enter email",
+      "presenter": "References Email"
+    }
+  },
+  "forgot_password": {
+    "name": "Forgot password",
+    "content": "Please enter your registered email for the system to authenticate and issue a new password",
+    "form":{
+      "email": "Enter email",
+      "btn": "Send request"
+    }
+  },
+  "confidentiality": "Confidentiality",
+  "disclaimer": "Disclaimer",
+  "change_password": {
+    "name": "CHANGE PASSWORD",
+    "form":{
+      "pass": "password",
+      "confirm_pass": "Password re-authentication"
+    }
+  },
+
+  "modal": {
+    "content": "Please fill out the form below and we will get back to you as soon as possible.",
+    "completed": "Completed"
+  }
+}
